@@ -22,11 +22,11 @@ jobs:
 
       - name: Build image
         if: success()
-        run: docker build --build-arg VERSION=${GITHUB_REF##*/} --build-arg COMMIT=${GITHUB_SHA} -t sakpaas/keycloak:prod-${GITHUB_SHA} .
+        run: docker build -t sakpaas/keycloak:prod-${GITHUB_SHA} .
 
       - name: Tag image
         if: success()
-        run: docker tag sakpaas/keycloak:release-${GITHUB_REF##*/} sakpaas/keycloak:latest
+        run: docker tag sakpaas/keycloak:prod-${GITHUB_SHA} sakpaas/keycloak:latest
 
       - name: Push <image>:prod-<tag>
         if: success()
