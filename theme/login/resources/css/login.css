@@ -1,6 +1,16 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto-Semibold';
+    src: url("../fonts/Roboto-Medium.ttf");
+}
+
 html{
     margin: 0 auto;
-    font-family: Roboto;
+    font-family: 'Roboto';
     background-image: url(../img/map.PNG);
     background-position: center center;
     background-repeat: no-repeat;
@@ -40,6 +50,7 @@ html{
 
 #kc-page-title::after{
     content: 'Welcome!';
+    font-family: 'Roboto-Semibold';
     font-size: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -82,6 +93,7 @@ input[type=submit]{
     border-radius: 16px;
     box-shadow: 0 0 0;
     font-size: 18px;
+    font-family: 'Roboto-Semibold';
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #26c485;
