@@ -137,3 +137,18 @@ label{
     margin-bottom: 5px;
     font-size: 13px;
 }
+
+li {
+    font-size: 14px;
+    list-style: none;
+    padding-right: 0;
+}
+
+ul {
+    padding: 0;
+    margin-left: 15%;
+}
+
+a#zocial-google {
+    color: #26c485;
+}
