@@ -18,13 +18,15 @@ html{
     background-size: cover;
     float: center;
     text-align: center;
+    margin-top: 5vh;
 }
 
 #kc-header{
     font-size: 0;
-    height: 167px;
+    height: 200px;
     width: 70%;
     max-width: 360px;
+    min-width: 220px;
     background-position: 50% 25px;
     background-image: url(../img/logo-rund-weiss-rgb.svg);
     background-repeat: no-repeat;
@@ -43,6 +45,7 @@ html{
     background-color: white;
     width: 70%;
     max-width: 360px;
+    min-width: 220px;
     margin: 0 auto;
     padding-top: 15px;
     padding-bottom: 5px;
@@ -63,6 +66,7 @@ html{
     padding-top: 20px;
     padding-bottom: 20px;
     max-width: 360px;
+    min-width: 220px;
     width: 70%;
     border-radius: 16px;
     border-top-left-radius: 0;
