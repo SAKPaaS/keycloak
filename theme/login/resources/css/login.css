@@ -154,11 +154,6 @@ label {
   justify-content: center;
 }
 
-#kc-social-providers:before {
-  content: "Or sign in with: "; /* TODO: Replace with text-symbol. */
-  margin: auto 0;
-}
-
 #kc-social-providers > ul {
   margin: 0;
   padding: 0;
@@ -176,14 +171,14 @@ label {
 }
 
 #zocial-google::before {
-  content: url("../img/google_signin_buttons/web/vector/btn_google_light_normal_ios.svg");
+  content: url("../img/google_signin_buttons/web/2x/btn_google_signin_light_normal_web@2x.png");
 }
 
 #zocial-google:hover::before,
 #zocial-google:focus::before {
-  content: url("../img/google_signin_buttons/web/vector/btn_google_light_focus_ios.svg");
+  content: url("../img/google_signin_buttons/web/2x/btn_google_signin_light_focus_web@2x.png");
 }
 
 #zocial-google:active::before {
-  content: url("../img/google_signin_buttons/web/vector/btn_google_light_pressed_ios.svg");
+  content: url("../img/google_signin_buttons/web/2x/btn_google_signin_light_pressed_web@2x.png");
 }
