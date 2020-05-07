@@ -1,2 +1,3 @@
 FROM jboss/keycloak
-COPY /themes/ /opt/jboss/keycloak/themes/
+COPY /theme/ /opt/jboss/keycloak/themes/happyhamster/
+COPY /template/ /opt/jboss/keycloak/themes/happyhamster-base/
