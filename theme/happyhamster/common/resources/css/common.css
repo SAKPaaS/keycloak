@@ -80,8 +80,11 @@ input[type="submit"]:active {
   background-color: #bad1cd;
 }
 
-.alert.alert-error {
-  color: #fe5f55;
+.alert {
   margin-bottom: 10px;
   font-weight: bold;
+}
+
+.alert.alert-error {
+  color: #fe5f55;
 }
