@@ -7,7 +7,7 @@
     <meta name="robots" content="noindex, nofollow">
 
     <title>${msg("accountManagementTitle")}</title>
-    <link rel="icon" href="${url.resourcesPath}/img/favicon.ico">
+    <link rel="icon" href="${url.resourcesPath}/img/icons/favicon.ico">
     <#if properties.styles?has_content>
         <#list properties.styles?split(' ') as style>
             <link href="${url.resourcesPath}/${style}" rel="stylesheet" />
@@ -25,7 +25,7 @@
             <header class="navbar navbar-default navbar-pf navbar-main header">
                 <nav class="navbar" role="navigation">
                     <div class="navbar-header">
-                        <img src="${url.resourcesPath}/img/logo/vect/logo.svg">
+                        <img id="logo" src="${url.resourcesPath}/img/logo/vect/logo.svg">
                     </div>
                     <div class="navbar-collapse navbar-collapse-1">
                         <div class="container">
