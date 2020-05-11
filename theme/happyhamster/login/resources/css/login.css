@@ -1,3 +1,9 @@
+@media only screen and (max-width: 700px) {
+  #loginForm {
+    flex-direction: column;
+  }
+}
+
 body > .wrapper > .wrapper-inner {
   display: flex;
 }
