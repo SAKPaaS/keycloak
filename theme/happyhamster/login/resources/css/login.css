@@ -170,9 +170,3 @@ body > .wrapper > .wrapper-inner {
   width: 79px;
   content: "";
 }
-
-.alert.alert-error {
-  color: #fe5f55;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
