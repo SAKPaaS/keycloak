@@ -1,6 +1,12 @@
 @media only screen and (max-width: 700px) {
   #loginForm {
     flex-direction: column;
+    margin: 0 !important;
+    width: 100%;
+    border-radius: 0 !important;
+  }
+  #loginForm > main {
+    width: initial !important;
   }
 }
 
