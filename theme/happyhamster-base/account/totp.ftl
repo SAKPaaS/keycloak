@@ -125,12 +125,12 @@
             <div id="kc-form-buttons" class="col-md-offset-2 col-md-10 submit">
                 <div class="">
                     <button type="submit"
-                            class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}"
-                            id="saveTOTPBtn" name="submitAction" value="Save">${msg("doSave")}
-                    </button>
-                    <button type="submit"
                             class="${properties.kcButtonClass!} ${properties.kcButtonDefaultClass!} ${properties.kcButtonLargeClass!}"
                             id="cancelTOTPBtn" name="submitAction" value="Cancel">${msg("doCancel")}
+                    </button>
+                    <button type="submit"
+                            class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}"
+                            id="saveTOTPBtn" name="submitAction" value="Save">${msg("doSave")}
                     </button>
                 </div>
             </div>
