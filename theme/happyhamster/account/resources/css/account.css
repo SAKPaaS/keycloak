@@ -1,0 +1,41 @@
+div.wrapper-inner > div.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+div.wrapper-inner > header {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#logo {
+  width: 58px;
+}
+
+div.wrapper-inner > div.container > div.bs-sidebar {
+  background-color: #fff;
+  flex: 1;
+}
+
+div.wrapper-inner > div.container > div.bs-sidebar > ul {
+  width: 300px;
+  margin: 84px 17px 0 auto;
+  box-sizing: border-box;
+  list-style-type: none;
+  padding: 0;
+}
+
+div.wrapper-inner > div.container > div.bs-sidebar > ul li {
+  padding-left: 14px;
+}
+
+div.wrapper-inner > div.container > div.bs-sidebar > ul > li.logout-link {
+  position: absolute;
+  bottom: 19px;
+}
+
+div.wrapper-inner > div.container > div.content-area {
+  background-color: #ebeeec;
+  flex: 2.5;
+}
