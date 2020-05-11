@@ -32,7 +32,7 @@
 </head>
 
 <body class="${properties.kcBodyClass!}">
-  <div class="${properties.kcLoginClass!}">
+  <div id="loginForm" class="${properties.kcLoginClass!}">
     <div id="kc-header" class="${properties.kcHeaderClass!}">
       <div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>
     </div>
@@ -119,23 +119,27 @@
 
           <#nested "form">
 
-          <#if auth?has_content && auth.showTryAnotherWayLink() && showAnotherWayIfPresent>
-          <form id="kc-select-try-another-way-form" action="${url.loginAction}" method="post" <#if displayWide>class="${properties.kcContentWrapperClass!}"</#if>>
-              <div <#if displayWide>class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}"</#if>>
-                  <div class="${properties.kcFormGroupClass!}">
-                    <input type="hidden" name="tryAnotherWay" value="on" />
-                    <a href="#" id="try-another-way" onclick="document.forms['kc-select-try-another-way-form'].submit();return false;">${msg("doTryAnotherWay")}</a>
-                  </div>
-              </div>
-          </form>
-          </#if>
+          <#if (auth?has_content && auth.showTryAnotherWayLink() && showAnotherWayIfPresent) || displayInfo>
+            <div class="options">
+                <#if auth?has_content && auth.showTryAnotherWayLink() && showAnotherWayIfPresent>
+                <form id="kc-select-try-another-way-form" action="${url.loginAction}" method="post" <#if displayWide>class="${properties.kcContentWrapperClass!}"</#if>>
+                    <div <#if displayWide>class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}"</#if>>
+                        <div class="${properties.kcFormGroupClass!}">
+                          <input type="hidden" name="tryAnotherWay" value="on" />
+                          <a href="#" id="try-another-way" onclick="document.forms['kc-select-try-another-way-form'].submit();return false;">${msg("doTryAnotherWay")}</a>
+                        </div>
+                    </div>
+                </form>
+                </#if>
 
-          <#if displayInfo>
-              <div id="kc-info" class="${properties.kcSignUpClass!}">
-                  <div id="kc-info-wrapper" class="${properties.kcInfoAreaWrapperClass!}">
-                      <#nested "info">
-                  </div>
-              </div>
+                <#if displayInfo>
+                    <div id="kc-info" class="${properties.kcSignUpClass!}">
+                        <div id="kc-info-wrapper" class="${properties.kcInfoAreaWrapperClass!}">
+                            <#nested "info">
+                        </div>
+                    </div>
+                </#if>
+            </div>
           </#if>
         </div>
       </div>

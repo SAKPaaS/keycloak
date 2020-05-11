@@ -1,7 +1,7 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout displayInfo=social.displayInfo displayWide=(realm.password && social.providers??); section>
     <#if section = "header">
-        ${msg("doLogIn")}
+        ${msg("happyhamster-heading-welcome")}
     <#elseif section = "form">
     <div id="kc-form" <#if realm.password && social.providers??>class="${properties.kcContentWrapperClass!}"</#if>>
       <div id="kc-form-wrapper" <#if realm.password && social.providers??>class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}"</#if>>
@@ -23,18 +23,7 @@
                 </div>
 
                 <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
-                    <div id="kc-form-options">
-                        <#if realm.rememberMe && !usernameEditDisabled??>
-                            <div class="checkbox">
-                                <label>
-                                    <#if login.rememberMe??>
-                                        <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox" checked> ${msg("rememberMe")}
-                                    <#else>
-                                        <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox"> ${msg("rememberMe")}
-                                    </#if>
-                                </label>
-                            </div>
-                        </#if>
+                    <div id="kc-form-options">                        
                         </div>
                         <div class="${properties.kcFormOptionsWrapperClass!}">
                             <#if realm.resetPasswordAllowed>
@@ -48,11 +37,28 @@
                       <input type="hidden" id="id-hidden-input" name="credentialId" <#if auth.selectedCredential?has_content>value="${auth.selectedCredential}"</#if>/>
                       <input tabindex="4" class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" name="login" id="kc-login" type="submit" value="${msg("doLogIn")}"/>
                   </div>
+
+                <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
+                    <div id="kc-form-options">    
+                        <#if realm.rememberMe && !usernameEditDisabled??>
+                            <div class="checkbox">
+                                <label>
+                                    <#if login.rememberMe??>
+                                        <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox" checked> ${msg("rememberMe")}
+                                    <#else>
+                                        <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox"> ${msg("rememberMe")}
+                                    </#if>
+                                </label>
+                            </div>
+                        </#if>
+                    </div>
+                </div>
             </form>
         </#if>
         </div>
         <#if realm.password && social.providers??>
             <div id="kc-social-providers" class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}">
+                <label>${msg("happyhamster-doSignInWith")}</label>
                 <ul class="${properties.kcFormSocialAccountListClass!} <#if social.providers?size gt 4>${properties.kcFormSocialAccountDoubleListClass!}</#if>">
                     <#list social.providers as p>
                         <li class="${properties.kcFormSocialAccountListLinkClass!}"><a href="${p.loginUrl}" id="zocial-${p.alias}" class="zocial ${p.providerId}"> <span>${p.displayName}</span></a></li>
@@ -64,7 +70,8 @@
     <#elseif section = "info" >
         <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
             <div id="kc-registration">
-                <span>${msg("noAccount")} <a tabindex="6" href="${url.registrationUrl}">${msg("doRegister")}</a></span>
+                <label>${msg("noAccount")}</label>
+                <a tabindex="6" href="${url.registrationUrl}">${msg("happyhamster-registerHere")}</a>
             </div>
         </#if>
     </#if>
