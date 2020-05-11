@@ -1,0 +1,42 @@
+body > .wrapper > footer {
+  color: #9da9a0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+}
+
+body > .wrapper > footer > * {
+  display: inline;
+}
+
+body > .wrapper > footer > a {
+  height: 100%;
+  margin: auto 5px;
+}
+
+body > .wrapper > footer > .ml {
+  margin: auto 10px;
+}
+
+body > .wrapper > footer a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body > .wrapper > footer a:hover {
+  color: #26c485;
+}
+
+body > .wrapper > footer > nav {
+  margin: auto 0 auto auto;
+}
+
+body > .wrapper > footer > nav > a {
+  margin: 0;
+}
+
+.horiz-separator {
+  border: 1px #9da9a0 solid;
+  margin: 0 8px;
+}

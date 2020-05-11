@@ -35,11 +35,11 @@
     <div class="wrapper">
     <div class="wrapper-inner">
       <div id="loginForm" class="${properties.kcLoginClass!}">
-        <div id="kc-header" class="${properties.kcHeaderClass!}">
+        <header id="kc-header" class="${properties.kcHeaderClass!}">
           <img id="logo" src="${url.resourcesPath}/img/logo/vect/logo.svg">
           <!-- REALM: <div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>-->
-        </div>
-        <div class="${properties.kcFormCardClass!} <#if displayWide>${properties.kcFormCardAccountClass!}</#if>">
+        </header>
+        <main class="${properties.kcFormCardClass!} <#if displayWide>${properties.kcFormCardAccountClass!}</#if>">
           <header class="${properties.kcFormHeaderClass!}">
             <!-- NOT IMPLEMENTED
             <#if realm.internationalizationEnabled  && locale.supported?size gt 1>
@@ -124,7 +124,6 @@
 
               <#nested "form">
 
-              <#if (auth?has_content && auth.showTryAnotherWayLink() && showAnotherWayIfPresent) || displayInfo>
                 <div class="options">
                     <#if auth?has_content && auth.showTryAnotherWayLink() && showAnotherWayIfPresent>
                     <form id="kc-select-try-another-way-form" action="${url.loginAction}" method="post" <#if displayWide>class="${properties.kcContentWrapperClass!}"</#if>>
@@ -137,6 +136,8 @@
                     </form>
                     </#if>
 
+                    <#nested "social">
+
                     <#if displayInfo>
                         <div id="kc-info" class="${properties.kcSignUpClass!}">
                             <div id="kc-info-wrapper" class="${properties.kcInfoAreaWrapperClass!}">
@@ -145,14 +146,13 @@
                         </div>
                     </#if>
                 </div>
-              </#if>
             </div>
           </div>
 
-        </div>
+        </main>
       </div>
-      <#include "footer.ftl">
     </div>
+    <#include "footer.ftl">
     </div>
 </body>
 </html>

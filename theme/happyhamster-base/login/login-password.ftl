@@ -14,8 +14,7 @@
 
                 <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
                     <div id="kc-form-options">
-                        </div>
-                        <div class="${properties.kcFormOptionsWrapperClass!}">
+                        <div id="forgotPasswordContainer" class="${properties.kcFormOptionsWrapperClass!}">
                             <#if realm.resetPasswordAllowed>
                                 <span><a tabindex="5" href="${url.loginResetCredentialsUrl}">${msg("doForgotPassword")}</a></span>
                             </#if>
