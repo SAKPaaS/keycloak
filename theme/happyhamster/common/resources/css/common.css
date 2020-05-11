@@ -85,6 +85,7 @@ input[type="submit"]:active {
   font-weight: bold;
 }
 
+span.required,
 .alert.alert-error {
   color: #fe5f55;
 }
