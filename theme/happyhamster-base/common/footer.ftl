@@ -12,7 +12,7 @@
         <img src="${url.resourcesPath}/img/icons/social-media/github-grey.svg" alt="${msg('happyhamster-title-github')}" />
     </a>
 
-    <div class="ml">
+    <div>
         <img src="${url.resourcesPath}/img/icons/separator.svg" />
     </div>
 
