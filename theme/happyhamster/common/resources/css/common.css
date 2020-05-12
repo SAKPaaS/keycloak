@@ -73,6 +73,11 @@ button,
   border-radius: 10px;
 }
 
+input:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+
 input:not([type="submit"]):disabled {
   background-color: transparent;
 }
