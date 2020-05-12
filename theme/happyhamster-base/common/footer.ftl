@@ -12,7 +12,7 @@
         <img src="${url.resourcesPath}/img/icons/social-media/github-grey.svg" alt="${msg('happyhamster-title-github')}" />
     </a>
 
-    <div class="ml">
+    <div>
         <img src="${url.resourcesPath}/img/icons/separator.svg" />
     </div>
 
@@ -21,11 +21,11 @@
     <img src="${url.resourcesPath}/img/icons/about.svg" alt="${msg('happyhamster-title-feedback')}" title="${msg('happyhamster-title-feedback')}" />
     </a>
     <nav>
-    <a href="" routerLink="/legal/impressum" title="${msg('happyhamster-title-impressum')}">
+    <a href="/legal/impressum" title="${msg('happyhamster-title-impressum')}">
         ${msg("happyhamster-title-impressum")}
     </a>
     <span class="horiz-separator"></span>
-    <a href="" routerLink="/legal/privacy-policy" title="${msg('happyhamster-title-privacy-policy')}">
+    <a href="/legal/privacy-policy" title="${msg('happyhamster-title-privacy-policy')}">
         ${msg("happyhamster-title-privacy-policy")}
     </a>
     </nav>

@@ -10,6 +10,8 @@
         </div>
     </div>
 
+    <hr>
+
     <form action="${url.passwordUrl}" class="form-horizontal" method="post">
         <input type="text" id="username" name="username" value="${(account.username!'')}" autocomplete="username" readonly="readonly" style="display:none;">
 

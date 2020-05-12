@@ -78,8 +78,8 @@
                     <#nested "content">
                 </div>
             </div>
-            <#include "footer.ftl">
         </div>
+        <#include "footer.ftl">
     </div>
 </body>
 </html>

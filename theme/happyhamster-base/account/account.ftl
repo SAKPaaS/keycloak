@@ -10,6 +10,8 @@
         </div>
     </div>
 
+    <hr>
+
     <form action="${url.accountUrl}" class="form-horizontal" method="post">
 
         <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">

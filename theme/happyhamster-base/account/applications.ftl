@@ -7,6 +7,8 @@
         </div>
     </div>
 
+    <hr>
+    
     <form action="${url.applicationsUrl}" method="post">
         <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">
         <input type="hidden" id="referrer" name="referrer" value="${stateChecker}">
