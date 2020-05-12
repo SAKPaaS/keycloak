@@ -7,6 +7,8 @@
         </div>
     </div>
 
+    <hr>
+
     <div id="federated-identities">
     <#list federatedIdentity.identities as identity>
         <div class="row margin-bottom">

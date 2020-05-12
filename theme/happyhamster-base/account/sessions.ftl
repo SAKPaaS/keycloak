@@ -7,6 +7,8 @@
         </div>
     </div>
 
+    <hr>
+
     <table class="table table-striped table-bordered">
         <thead>
         <tr>

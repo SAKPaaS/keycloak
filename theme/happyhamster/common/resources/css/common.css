@@ -73,10 +73,16 @@ button,
   border-radius: 10px;
 }
 
+button[type="submit"][value="Cancel"] {
+  background: #9da9a0;
+}
+
+button[type="submit"],
 input[type="submit"] {
   background: #26c485;
 }
 
+button[type="submit"]:active,
 input[type="submit"]:active {
   background-color: #bad1cd;
 }
