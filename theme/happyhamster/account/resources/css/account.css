@@ -102,6 +102,11 @@ div.wrapper-inner > div.container > div.content-area {
   padding: 18px 24px 0 24px;
 }
 
+div.wrapper-inner > div.container > div.content-area {
+  font-size: 14px;
+  line-height: 16px;
+}
+
 div.wrapper-inner > div.container > div.content-area div.row:first-of-type {
   display: flex;
   margin: 24px 0;
