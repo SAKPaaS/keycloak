@@ -100,3 +100,9 @@ span.required,
 .alert.alert-error {
   color: #fe5f55;
 }
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #bad1cd;
+  margin-bottom: 16px;
+}
