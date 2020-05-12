@@ -1,8 +1,33 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@media only screen and (max-width: 750px) {
+  body > .wrapper > .wrapper-inner > .container {
+    flex-direction: column;
+  }
+  body > .wrapper > .wrapper-inner > .container > .bs-sidebar > ul {
+    margin: auto 0 0 0;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  body
+    > .wrapper
+    > .wrapper-inner
+    > .container
+    > .bs-sidebar
+    > ul
+    > li.logout-link {
+    position: relative;
+  }
+}
+
 div.wrapper-inner > div.container {
   display: flex;
   height: 100%;
   width: 100%;
 }
+
 div.wrapper-inner > header {
   position: absolute;
   left: 0;
@@ -14,25 +39,60 @@ div.wrapper-inner > header {
 }
 
 div.wrapper-inner > div.container > div.bs-sidebar {
+  display: flex;
   background-color: #fff;
   flex: 1;
 }
 
 div.wrapper-inner > div.container > div.bs-sidebar > ul {
-  width: 300px;
-  margin: 84px 17px 0 auto;
-  box-sizing: border-box;
+  position: relative;
+  width: 199px;
+  margin: 84px 17px 19px auto;
   list-style-type: none;
   padding: 0;
 }
 
-div.wrapper-inner > div.container > div.bs-sidebar > ul li {
-  padding-left: 14px;
+div.wrapper-inner > div.container > div.bs-sidebar > ul > li.active ::after {
+  font-family: "Material Icons";
+  content: "arrow_forward_ios";
+  font-feature-settings: "liga";
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga";
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+}
+
+div.wrapper-inner > div.container > div.bs-sidebar > ul > li:hover,
+div.wrapper-inner > div.container > div.bs-sidebar > ul > li:focus,
+div.wrapper-inner > div.container > div.bs-sidebar > ul > li.active {
+  background: rgba(186, 209, 205, 0.2);
+}
+
+div.wrapper-inner > div.container > div.bs-sidebar > ul > li.active {
+  padding-right: 20px;
+}
+
+div.wrapper-inner > div.container > div.bs-sidebar > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+div.wrapper-inner > div.container > div.bs-sidebar > ul > li {
+  padding: 7px 7px 7px 14px;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 div.wrapper-inner > div.container > div.bs-sidebar > ul > li.logout-link {
   position: absolute;
-  bottom: 19px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 div.wrapper-inner > div.container > div.content-area {
@@ -49,8 +109,51 @@ div.wrapper-inner > div.container > div.content-area div.row:first-of-type {
 
 div.wrapper-inner > div.container > div.content-area div.row:first-of-type h2 {
   margin: 0;
-  font-size: 3em;
+  font-size: 36px;
+  line-height: 42px;
   font-weight: normal;
+}
+
+div.wrapper-inner > div.container > div.content-area div.row:first-of-type div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div.form-group {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.col-sm-2.col-md-2 {
+  width: 200px;
+  flex: 2;
+  text-align: right;
+  padding-right: 26px;
+}
+
+.col-sm-5.col-md-5 {
+  flex: 5;
+}
+
+div.form-group .col-sm-2.col-md-2 span.required {
+  margin-left: 10px;
+}
+
+#kc-form-buttons {
+  margin-left: auto;
+}
+
+.col-sm-10.col-md-10 {
+  flex: 10;
+}
+
+input {
+  width: 100%;
+}
+
+#federated-identities .row .col-sm-5.col-md-5 {
+  margin-right: 12px;
 }
 
 div.wrapper-inner
@@ -63,4 +166,45 @@ div.wrapper-inner
 
 button#logout-all-sessions {
   background: #9da9a0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table thead tr:first-child td:first-child {
+  border-top-left-radius: 12px;
+}
+
+table thead tr:first-child td:last-child {
+  border-top-right-radius: 12px;
+}
+
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+table thead td {
+  padding-bottom: 24px;
+}
+table td,
+table th {
+  padding: 11px;
+}
+
+thead {
+  background: #bad1cd;
+  color: #fff;
+}
+
+tbody td {
+  background: #fff;
+}
+
+tbody td:first-of-type ~ td {
+  border-left: 1px solid #26c485;
 }
