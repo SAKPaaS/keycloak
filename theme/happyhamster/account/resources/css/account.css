@@ -182,6 +182,7 @@ button#logout-all-sessions {
 table {
   border-collapse: collapse;
   width: 100%;
+  margin-bottom: 17px
 }
 
 table thead tr:first-child td:first-child {
