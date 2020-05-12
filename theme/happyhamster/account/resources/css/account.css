@@ -130,6 +130,12 @@ div.form-group {
   flex: 2;
   text-align: right;
   padding-right: 26px;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.col-sm-2.col-md-2 * {
+  align-self: center;
 }
 
 .col-sm-5.col-md-5 {
