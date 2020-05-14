@@ -14,6 +14,12 @@ body > .wrapper > .wrapper-inner {
   display: flex;
 }
 
+@-moz-document url-prefix() {
+  #loginForm {
+    background: #ededec;
+  }
+}
+
 #loginForm {
   position: relative;
   margin: auto;
