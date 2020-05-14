@@ -16,7 +16,7 @@ body > .wrapper > .wrapper-inner {
 
 @-moz-document url-prefix() {
   #loginForm {
-    background: #ededec;
+    background: #ededec !important;
   }
 }
 
@@ -69,12 +69,19 @@ body > .wrapper > .wrapper-inner {
   color: #26c485;
 }
 
-#kc-form-login > div:not(#kc-form-buttons) {
+#kc-form-login > div:not(#kc-form-buttons),
+#kc-register-form > div:not(#kc-form-buttons) {
   display: flex;
   flex-direction: column;
   margin-bottom: 9px;
 }
+#kc-register-form > div:not(#kc-form-buttons) > div > input {
+  width: 100%;
+}
 
+#kc-register-form div#kc-form-options {
+  margin-bottom: 12px;
+}
 #kc-form-login > div > label {
   font-size: 14px;
   line-height: 16px;
