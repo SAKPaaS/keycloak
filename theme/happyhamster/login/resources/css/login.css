@@ -25,6 +25,7 @@ body > .wrapper > .wrapper-inner {
   margin: auto;
   overflow: auto;
   display: flex;
+  max-height: 100%;
 
   border-radius: 15px;
 
