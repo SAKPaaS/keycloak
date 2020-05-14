@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Semibold";
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+
+html {
+  margin: 0;
+  font-family: "Roboto";
+  color: #0b0033;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+body > .wrapper {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  border: 14px solid white;
+  padding-bottom: 50px;
+}
+
+body > .wrapper > .wrapper-inner {
+  position: relative;
+  border-radius: 12px;
+  overflow: auto;
+  background-image: url(../img/bg/map.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: #26c485;
+}
+
+input:not([type="submit"]) {
+  background: #fff;
+  height: 35px;
+  border: none;
+  border-bottom: 1px solid #26c485;
+  transition: border 0.1s;
+  box-sizing: border-box;
+}
+
+input:not([type="submit"]):focus {
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #26c485;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  outline: none;
+  border: none;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #fff;
+  background: #bad1cd;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+input:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+input:not([type="submit"]):disabled {
+  background-color: transparent;
+}
+
+button[type="submit"][value="Cancel"] {
+  background: #9da9a0;
+}
+
+button[type="submit"],
+input[type="submit"] {
+  background: #26c485;
+}
+
+button[type="submit"]:active,
+input[type="submit"]:active {
+  background-color: #bad1cd;
+}
+
+.alert {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+span.required,
+.alert.alert-error {
+  color: #fe5f55;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #bad1cd;
+  margin-bottom: 16px;
+}
