@@ -1,12 +1,56 @@
 @media only screen and (max-width: 700px) {
   #loginForm {
-    flex-direction: column;
+    display: initial !important;
     margin: 0 !important;
     width: 100%;
     border-radius: 0 !important;
   }
   #loginForm > main {
     width: initial !important;
+    justify-content: flex-end;
+  }
+  #kc-register-form > div > div {
+    margin-bottom: 11px;
+  }
+
+  #rememberMeContainer > .checkbox > label,
+  #kc-registration label,
+  #kc-registration a,
+  #forgotPasswordContainer a {
+    font-size: 1rem !important;
+    line-height: 1.17rem !important;
+  }
+
+  #kc-form-buttons {
+    width: 100% !important;
+  }
+
+  #rememberMeContainer > .checkbox {
+    justify-content: flex-end !important;
+  }
+
+  #kc-registration {
+    align-items: flex-end !important;
+    text-align: right !important;
+  }
+
+  #kc-form-login > div:not(#kc-form-buttons),
+  #kc-register-form > div:not(#kc-form-buttons) {
+    margin-bottom: 17px !important;
+  }
+
+  #loginForm > #kc-header {
+    height: 250px;
+    flex: initial !important;
+  }
+
+  #loginForm #kc-page-title {
+    text-align: center;
+  }
+
+  #kc-login {
+    font-size: 1.83rem !important;
+    line-height: 2.17rem !important;
   }
 }
 
@@ -84,7 +128,7 @@ body > .wrapper > .wrapper-inner {
 #kc-register-form div#kc-form-options {
   margin-bottom: 12px;
 }
-#kc-form-login > div > label {
+label {
   font-size: 14px;
   line-height: 16px;
 }
@@ -106,8 +150,13 @@ body > .wrapper > .wrapper-inner {
   align-items: center;
   justify-content: center;
   vertical-align: baseline;
+}
+
+#rememberMeContainer > .checkbox > label,
+#kc-registration label {
   font-size: 11px;
   line-height: 13px;
+  margin-bottom: 0;
 }
 
 #rememberMeContainer > .checkbox > input {
