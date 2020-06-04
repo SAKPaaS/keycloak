@@ -12,6 +12,37 @@ html {
   margin: 0;
   font-family: "Roboto";
   color: #0b0033;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 18px;
+  }
+
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"],
+  label,
+  h1 {
+    font-size: 1.33rem;
+  }
+
+  body > .wrapper {
+    border: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  body > .wrapper > .wrapper-inner {
+    border-radius: 0 !important;
+  }
+
+  label {
+    font-size: 1.33rem;
+    line-height: 28px;
+    margin-bottom: 11px;
+  }
 }
 
 body {
@@ -64,7 +95,7 @@ button,
 [type="submit"] {
   outline: none;
   border: none;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 16px;
   text-align: center;
   color: #fff;
